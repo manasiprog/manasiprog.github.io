@@ -4,19 +4,169 @@
   <meta charset="UTF-8">
   <title>Manasi Deshpande | Portfolio</title>
   <style>
-    body {
-      font-family: sans-serif;
-      padding: 40px;
-      background-color: #f8f9fa;
+    * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
     }
-    h1 {
-      color: #343a40;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin-left: 20px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 80px 50px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #ffdd57;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+    }
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .skill-box, .project-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      flex: 1 1 200px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.8);
+      font-size: 14px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ffdd57;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #f4c430;
     }
   </style>
 </head>
 <body>
-  <h1>Hello! I'm Manasi Deshpande</h1>
-  <p>M.Tech DSA student | Interested in ML, NLP, and Japanese language AI</p>
-  <p>📧 Email: manasi@example.com</p>
+
+  <header>
+    <h1>Manasi Deshpande</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <center>
+      <img src="your-image.jpg" alt="Profile Picture" class="profile-pic">
+    </center>
+    <h2>About Me</h2>
+    <p>
+      I am a passionate M.Tech Data Science student with interests in Machine Learning, NLP, Image/Video Analytics, and Japanese language AI. I love building meaningful projects and learning cutting-edge technologies.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-box">Python</div>
+      <div class="skill-box">Machine Learning</div>
+      <div class="skill-box">NLP (Japanese & English)</div>
+      <div class="skill-box">OpenCV</div>
+      <div class="skill-box">HTML/CSS</div>
+      <div class="skill-box">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-box">
+        <h3>Bicanoid: Indoor Object Tracker</h3>
+        <p>Smart tag-based object tracking using BLE beacons.</p>
+        <a href="https://github.com/yourusername/bicanoid" target="_blank" style="color: #ffdd57;">View on GitHub</a>
+      </div>
+      <div class="project-box">
+        <h3>Video Analytics for Action Recognition</h3>
+        <p>Recognizing activities like horse riding, tabla playing using OpenCV and motion features.</p>
+        <a href="https://github.com/yourusername/action-recognition" target="_blank" style="color: #ffdd57;">View on GitHub</a>
+      </div>
+      <!-- Add more project-boxes as needed -->
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>
+      You can download my resume below:
+    </p>
+    <a href="your-resume.pdf" download style="color: #ffdd57;">📄 Download Resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Your email">
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" placeholder="Your message"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Manasi Deshpande | M.Tech Data Science Portfolio
+  </footer>
+
 </body>
 </html>
